@@ -1,6 +1,9 @@
 package net.lintz13.diverseecosystems;
 
 import com.mojang.logging.LogUtils;
+import net.lintz13.diverseecosystems.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -33,6 +36,7 @@ public class DiverseEcosystems
         MinecraftForge.EVENT_BUS.register(this);
 
 
+        ModItems.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -46,6 +50,11 @@ public class DiverseEcosystems
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        //adds the item in the Ingredients section of the creative mode inventory tab
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.ILLUMIRITE);
+            event.accept(ModItems.RAW_ILLUMIRITE);
+        }
 
     }
 
