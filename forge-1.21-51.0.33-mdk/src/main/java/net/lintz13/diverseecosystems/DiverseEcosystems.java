@@ -1,6 +1,8 @@
 package net.lintz13.diverseecosystems;
 
 import com.mojang.logging.LogUtils;
+import net.lintz13.diverseecosystems.block.ModBlocks;
+import net.lintz13.diverseecosystems.item.ModCreativeModeTabs;
 import net.lintz13.diverseecosystems.item.ModItems;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -35,8 +37,12 @@ public class DiverseEcosystems
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -56,6 +62,10 @@ public class DiverseEcosystems
             event.accept(ModItems.RAW_ILLUMIRITE);
         }
 
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.ILLUMIRITE_BLOCK);
+            event.accept(ModBlocks.RAW_ILLUMIRITE_BLOCK);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

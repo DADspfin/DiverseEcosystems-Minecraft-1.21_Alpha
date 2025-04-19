@@ -1,4 +1,9 @@
 {
   "item.diverseecosystemsmod.illumirite": "Illumirite",
-  "item.diverseecosystemsmod.raw_illumirite": "Raw Illumirite"
+  "item.diverseecosystemsmod.raw_illumirite": "Raw Illumirite",
+
+  "block.diverseecosystemsmod.illumirite_block": "Block of Illumirite",
+  "block.diverseecosystemsmod.raw_illumirite_block": "Illumirite Ore",
+
+  "creativetab.diverseecosystemsmod.diverse_ecosystems": "Diverse Ecosystems"
 }
