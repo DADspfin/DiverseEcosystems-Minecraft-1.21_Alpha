@@ -57,15 +57,15 @@ public class DiverseEcosystems
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         //adds the item in the Ingredients section of the creative mode inventory tab
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.ILLUMIRITE);
-            event.accept(ModItems.RAW_ILLUMIRITE);
-        }
-
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
-            event.accept(ModBlocks.ILLUMIRITE_BLOCK);
-            event.accept(ModBlocks.RAW_ILLUMIRITE_BLOCK);
-        }
+//        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+//            event.accept(ModItems.ILLUMIRITE);
+//            event.accept(ModItems.RAW_ILLUMIRITE);
+//        }
+//
+//        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+//            event.accept(ModBlocks.ILLUMIRITE_BLOCK);
+//            event.accept(ModBlocks.RAW_ILLUMIRITE_BLOCK);
+//        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
