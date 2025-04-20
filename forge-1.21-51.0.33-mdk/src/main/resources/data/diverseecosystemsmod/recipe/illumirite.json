@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "diverseecosystemsmod:illumirite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "diverseecosystemsmod:illumirite"
+  }
+}

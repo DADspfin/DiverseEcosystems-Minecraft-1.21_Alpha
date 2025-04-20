@@ -1,11 +1,14 @@
 package net.lintz13.diverseecosystems.block;
 
 
+import com.mojang.blaze3d.shaders.Uniform;
 import net.lintz13.diverseecosystems.DiverseEcosystems;
 import net.lintz13.diverseecosystems.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -26,6 +29,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> RAW_ILLUMIRITE_BLOCK = registerBlock("raw_illumirite_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final RegistryObject<Block> ILLUMIRITE_ORE = registerBlock("illumirite_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,1),BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RAW_ILLUMIRITE_DEEPSLATE_ORE = registerBlock("illumirite_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0,2), BlockBehaviour.Properties.of().strength(6f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

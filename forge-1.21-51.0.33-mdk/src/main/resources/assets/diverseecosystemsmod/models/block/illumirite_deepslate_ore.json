@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "diverseecosystemsmod:block/illumirite_deepslate_ore"
+  }
+}

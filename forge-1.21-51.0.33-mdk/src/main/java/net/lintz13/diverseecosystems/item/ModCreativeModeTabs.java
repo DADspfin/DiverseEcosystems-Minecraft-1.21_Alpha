@@ -24,6 +24,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_ILLUMIRITE.get());
                         output.accept(ModBlocks.ILLUMIRITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_ILLUMIRITE_BLOCK.get());
+                        output.accept(ModBlocks.ILLUMIRITE_ORE.get());
+                        output.accept(ModBlocks.RAW_ILLUMIRITE_DEEPSLATE_ORE.get());
+
                     })
                     .build());
 
