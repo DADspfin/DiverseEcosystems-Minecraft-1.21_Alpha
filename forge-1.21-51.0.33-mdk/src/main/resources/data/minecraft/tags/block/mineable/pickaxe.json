@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "diverseecosystemsmod:illumirite_block",
+    "diverseecosystemsmod:raw_illumirite_block",
+    "diverseecosystemsmod:illumirite_ore",
+    "diverseecosystemsmod:illumirite_deepslate_ore"
+  ]
+}
