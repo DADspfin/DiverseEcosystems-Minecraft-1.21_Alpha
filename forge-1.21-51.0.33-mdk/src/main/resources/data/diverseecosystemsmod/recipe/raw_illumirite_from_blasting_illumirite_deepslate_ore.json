@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 0.0,
+  "ingredient": {
+    "item":"diverseecosystemsmod:illumirite_deepslate_ore"
+  },
+  "result": {
+    "id": "diverseecosystemsmod:raw_illumirite"
+  }
+}

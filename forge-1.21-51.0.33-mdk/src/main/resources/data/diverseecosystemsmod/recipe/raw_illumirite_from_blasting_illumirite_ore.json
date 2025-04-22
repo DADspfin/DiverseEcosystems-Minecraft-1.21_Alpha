@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.0,
+  "ingredient": {
+    "item":"diverseecosystemsmod:illumirite_ore"
+  },
+  "result": {
+    "id": "diverseecosystemsmod:raw_illumirite"
+  }
+}
